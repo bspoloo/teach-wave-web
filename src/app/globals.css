@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #092B34;
+  --background:  linear-gradient(to right, #eaeaf5,#e1e3f5, #c0cbf5);
   --foreground: #E4F5FF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #E4F5FF;
+    --background: linear-gradient(to right, #eaeaf5,#e1e3f5, #c0cbf5);
     --foreground: #092B34;
   }
 }
@@ -26,4 +26,10 @@ body {
   align-items: center;
   width: auto;
   height: 80vh;
+}
+.MenuVertical{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height:99vh;
 }

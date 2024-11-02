@@ -15,3 +15,7 @@ export type ImageProps ={
     height?: number;
     classname: string
 }
+export type LinkMenuProps = {
+    url: string;
+    name: string
+}

@@ -6,20 +6,18 @@ import { sign } from "crypto";
 import Login from "./Atomic/Organisms/Login";
 import Logout from "./Atomic/Organisms/Logout";
 import Presentation from "./Atomic/Organisms/Presentation";
+import MenuVertical from "./Atomic/Organisms/MenuVertical";
 
 export default async function Home() {
-
   const session = await getServerSession(authOptions)
   const className = ''
-  const showSession = () => {
-    console.log(session);
-  }
-
-  showSession();
 
   if (session) {
     return <div className={className}>
-      <Logout />
+      <div>
+        <MenuVertical/>
+      </div>
+      
     </div>
   }
   return (
