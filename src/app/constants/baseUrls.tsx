@@ -1,0 +1,1 @@
+export const TEACHWVE_API = "http://localhost:5133/teachwaveAPI/v1/";

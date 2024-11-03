@@ -30,6 +30,36 @@ body {
 .MenuVertical{
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:space-around;
   height:99vh;
 }
+
+/* Estilo para el input del buscador */
+.search-input {
+  width: 100%;
+  max-width: 400px; /* Máximo ancho del buscador */
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cambios al enfocarse */
+.search-input:focus {
+  border-color: #0070f3; /* Color de borde al hacer foco */
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Placeholder estilizado */
+.search-input::placeholder {
+  color: #aaa;
+  font-style:normal;
+}
+
+
