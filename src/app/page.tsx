@@ -15,7 +15,7 @@ export default async function Home() {
   if (session) {
     return <div className={className}>
       <div>
-        <MenuVertical/>
+        
       </div>
       
     </div>

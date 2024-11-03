@@ -4,6 +4,9 @@ import "./globals.css";
 import HeaderDashboard from "./Atomic/Organisms/HeaderDashboard";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
+import MenuVertical from "./Atomic/Organisms/MenuVertical";
+import { SessionProvider } from "next-auth/react";
+
 
 
 const geistSans = localFont({
@@ -30,13 +33,14 @@ export default async function RootLayout({
 
   const session = await getServerSession(authOptions)
 
-  if(session){
-    return(
+  if (session) {
+    return (
       <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
-        {children}
-      </body>
-    </html>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-row flex-wrap`} >
+            <MenuVertical />
+            {children}
+        </body>
+      </html>
     );
   }
   return (
