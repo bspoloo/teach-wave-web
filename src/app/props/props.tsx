@@ -17,7 +17,7 @@ export type ImageProps ={
 }
 export type LinkMenuProps = {
     url: string;
-    name: string
+    name: string;
 }
 export type SearcherProps = {
     placeholder: string,

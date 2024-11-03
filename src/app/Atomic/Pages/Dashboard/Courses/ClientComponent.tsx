@@ -17,7 +17,7 @@ export default function ClientComponent({ session }: { session: any }) {
     const [isModalOpenUpdate, setIsModalOpenUpdate] = useState(false);
     const [isModalOpenDelete, setIsModalOpenDelete] = useState(false);
     const [isModalOpenCreate, setIsModalOpenCreate] = useState(false);
-    const [id, setID] = useState(0);
+    const [id, setID] = useState(1);
 
     const handleOpenModalUpdate = (id: number) => {
 

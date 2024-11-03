@@ -7,7 +7,7 @@ import Admin from "../../resources/images/app/admin.png"
 export default async function DataUser() {
     const session = await getServerSession(authOptions)
     return (
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-6">
             <div className="flex justify-center items-center">
                 <Image
                     url={Admin.src}
